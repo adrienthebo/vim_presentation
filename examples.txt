@@ -1,0 +1,68 @@
+Insert mode
+
+    i		Start inserting at current mouse position (mnemonic: insert)
+    I		Start inserting at beginning of line
+    a		Start inserting after current mouse position (mnemonic: append)
+    A		Start inserting at end of line
+
+
+Moving around a file (Normal mode)
+
+    h		move cursor one character to left
+    j		move cursor one line down
+    k		move cursor one line up
+    l		move cursor one character to right
+
+    w		move to beginning of right word (mnemonic: end of Word)
+    b		move to beginning of left word (mnemonic: Beginning of word)
+    
+    ^		move to beginning of line
+    $		move to end of line
+
+    gg		move to top of file
+    G		move to bottom of file
+
+    L		move to bottom of screen
+    M		move to middle of screen
+    H		move to top of screen
+
+Manipulating a file (Normal mode)
+
+    u		Undo
+    <C-r>	Redo
+    x		Delete character at cursor
+    X		Delete character before cursor (Backspace)
+    y		Copy selection
+    yy		Copy the current line
+    d		Delete/cut selection
+    dd		Delete/cut current line
+    >>		Indent right
+    <<		Indent left
+    .		Repeat the previous command
+    /foo	Search for all instances of foo
+    ?foo	Reverse search for all instances of foo
+    n		Search for next instance of foo
+    N		Search for previous instance of foo
+
+Visual mode
+    
+    v	    Start highlighting characters
+    V	Start highlighting lines
+
+Command mode
+    
+    :w [file]	Save file
+    :e [file]	Edit file
+    :q		Quit	
+    :q!		QUIT!
+    :wq		Save and exit
+    :x		Same thing
+    :s/foo/bar/	Change all instances of foo to bar on the current line
+    :%s/foo/bar/ Change all instances of foo to bar in entire file
+    :make	Execute a makefile or equivalentsn
+    :cwin	Bring up error window from last :make
+    :cnext	Go to line of next error from build
+    :cprev	Go to line of prevoius error from build
+    :set [no]paste set paste mode
+    :set number Turn on line numbers
+
